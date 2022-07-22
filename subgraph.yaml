@@ -1,16 +1,16 @@
 specVersion: 0.0.2
-description: Uniswap is a decentralized protocol for automated token exchange on Ethereum.
-repository: https://github.com/Uniswap/uniswap-v2-subgraph
+description: KirkaSwap is a decentralized protocol for automated token exchange on Godwoken.
+repository: https://github.com/kirkaswap/dex-subgraph
 schema:
   file: ./schema.graphql
 dataSources:
   - kind: ethereum/contract
     name: Factory
-    network: mainnet
+    network: gw-testnet
     source:
-      address: '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f'
+      address: '0xb61f37ec8211a33e22a29d537bddbad5dddc5188'
       abi: Factory
-      startBlock: 10000834
+      startBlock: 212200
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.3
@@ -34,7 +34,7 @@ dataSources:
 templates:
   - kind: ethereum/contract
     name: Pair
-    network: mainnet
+    network: gw-testnet
     source:
       abi: Pair
     mapping:
