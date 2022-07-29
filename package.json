@@ -6,9 +6,9 @@
   "scripts": {
     "codegen": "graph codegen --output-dir src/types/",
     "build": "graph build",
-    "create-gw": "graph create kirkaswap/dex-subgraph --node https://gw-testnet-graph.kirkaswap.com/rpc/",
-    "remove-gw": "graph remove kirkaswap/dex-subgraph --node https://gw-testnet-graph.kirkaswap.com/rpc/",
-    "deploy-gw": "graph deploy kirkaswap/dex-subgraph --debug --ipfs https://gw-testnet-graph.kirkaswap.com/ipfs/ --node https://gw-testnet-graph.kirkaswap.com/rpc/"
+    "create-gw": "graph create kirkaswap/dex-subgraph --node https://gw-testnet-graph.nervosdao.community/rpc/",
+    "remove-gw": "graph remove kirkaswap/dex-subgraph --node https://gw-testnet-graph.nervosdao.community/rpc/",
+    "deploy-gw": "graph deploy kirkaswap/dex-subgraph --debug --ipfs https://gw-testnet-graph.nervosdao.community/ipfs/ --node https://gw-testnet-graph.nervosdao.community/rpc/"
   },
   "devDependencies": {
     "@graphprotocol/graph-cli": "^0.21.0",
